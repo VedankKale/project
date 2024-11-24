@@ -2,12 +2,13 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
+// Explicitly define the Props interface if you need types (optional)
 interface Props {
   title: string;
   description?: string;
 }
 
-// Destructure Astro.props
+// Destructure Astro.props here, outside YAML section
 const { title, description = "Explore history through engaging stories and detailed analysis" } = Astro.props;
 ---
 
